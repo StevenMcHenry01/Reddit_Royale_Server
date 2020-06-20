@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "npm prod",
+    "start": "npm run prod",
     "build": "npm-run-all clean transpile",
     "server": "node ./dist-server/bin/www",
     "dev": "NODE_ENV=development npm-run-all build server",
