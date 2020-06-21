@@ -8,7 +8,7 @@ import app from '../app'
 import debugLib from 'debug'
 import http from 'http'
 import chalk from 'chalk'
-const debug = debugLib('express-app-es6-boilerplate:server')
+const debug = debugLib('reddit-royale-server:server')
 
 /**
  * Get port from environment and store in Express.
