@@ -10,6 +10,8 @@ import {fetchTopSubreddits, fetchSubredditList, refreshAccessToken} from '../uti
 */
 
 router.get('/getTopSubs', async (req, res, next) => {
+  console.log(req.headers.access_token)
+  console.log(req.headers.refresh_token)
   if (req.headers.access_token && req.headers.refresh_token) {
     // decode jwt from header
     const decodedAccessToken = await jwt.verify(
